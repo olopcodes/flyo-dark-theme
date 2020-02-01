@@ -1,0 +1,48 @@
+#nav {
+    padding: 2rem 0;
+    background-color: $reviews-bg;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    // can't connect with the &
+    // because of the container
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav__logo{
+        width: 12rem;
+    }
+
+    .nav__menu  {
+        ul {
+            display: flex;
+        }
+        
+        &-item {
+            color: $font-color;
+            font-size: 1.4rem;
+            padding: .8rem 1.2rem;
+            transition: all .3s;
+
+            &:hover {
+                color: $cta-cyan;
+            }
+        }
+    }
+
+    .nav__btn {
+        width: 4rem;
+        height: 4rem;
+        display: none;
+        i {
+            font-size: 2.5rem;
+        }
+    }
+
+
+}
+

@@ -1,0 +1,58 @@
+#productive {
+    background-color: $main-bg;
+    // background-color: red;
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: 40rem;
+        justify-self: center;
+    }
+
+    .productive__left {
+        height: 100%;
+        background-image: url(../images/illustration-stay-productive.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;   
+    }
+
+    .productive__right {
+        height: 100%;
+        // background-color: grey;
+        padding: 3rem;
+
+        h2 {
+            font-size: 2.5rem;
+            margin: 3rem 0 1.5rem;
+            span{
+                display: block;
+            }
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .productive-btn {
+            display: inline-block;
+            font-size: 1.3rem;
+            color: $cta-cyan;
+            padding-bottom: .3rem;
+            border-bottom: 1px solid $cta-cyan;
+            transition: all .2s ease;
+            span {
+                display: inline-block;
+                width: 1.5rem;
+                position: relative;
+                top: .3rem;
+            }
+
+            &:hover {
+                margin-right: .5rem;
+                font-weight: bold;
+            }
+        }
+    }
+}

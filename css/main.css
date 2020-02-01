@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,700&display=swap");
+.btn {
+  cursor: pointer;
+  border: none;
+}
+
+.cta-btn {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bold;
+  background-image: -webkit-gradient(linear, left top, right top, from(#65e2d9), to(#339ecc));
+  background-image: linear-gradient(to right, #65e2d9, #339ecc);
+  padding: 1.2rem 7.5rem;
+  border-radius: 2.5rem;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.cta-btn:hover {
+  background-image: -webkit-gradient(linear, right top, left top, from(#65e2d9), to(#339ecc));
+  background-image: linear-gradient(to left, #65e2d9, #339ecc);
+}
+
+#nav {
+  padding: 2rem 0;
+  background-color: #202a3c;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+#nav .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#nav .nav__logo {
+  width: 12rem;
+}
+
+#nav .nav__menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#nav .nav__menu-item {
+  color: white;
+  font-size: 1.4rem;
+  padding: .8rem 1.2rem;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+#nav .nav__menu-item:hover {
+  color: #65e2d9;
+}
+
+#nav .nav__btn {
+  width: 4rem;
+  height: 4rem;
+  display: none;
+}
+
+#nav .nav__btn i {
+  font-size: 2.5rem;
+}
+
+#showcase {
+  padding-top: 2rem;
+  position: relative;
+  height: 95rem;
+}
+
+#showcase .showcase__img-box {
+  width: 40%;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+
+#showcase .showcase__text {
+  text-align: center;
+  width: 40%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+#showcase .showcase__heading {
+  font-size: 3.5rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+#showcase .showcase__info {
+  font-size: 1.8rem;
+  line-height: 1.3;
+  margin-bottom: 3rem;
+}
+
+#showcase .showcase__curve-box {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  height: 35%;
+  width: 100%;
+}
+
+#showcase .showcase__curve-img {
+  height: 100%;
+}
+
+#benefits {
+  background-color: #181f2a;
+}
+
+#benefits .benefits__container {
+  width: 50%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+}
+
+#benefits .benefits__box {
+  text-align: center;
+  padding: 2.5rem;
+}
+
+#benefits .benefits__img {
+  width: 4rem;
+}
+
+#benefits .benefits__heading {
+  font-size: 1.8rem;
+  margin: 2rem 0 1rem;
+}
+
+#benefits .benefits__info {
+  font-size: 1.25rem;
+}
+
+#productive {
+  background-color: #181f2a;
+}
+
+#productive .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  height: 40rem;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+#productive .productive__left {
+  height: 100%;
+  background-image: url(../images/illustration-stay-productive.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#productive .productive__right {
+  height: 100%;
+  padding: 3rem;
+}
+
+#productive .productive__right h2 {
+  font-size: 2.5rem;
+  margin: 3rem 0 1.5rem;
+}
+
+#productive .productive__right h2 span {
+  display: block;
+}
+
+#productive .productive__right p {
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+#productive .productive__right .productive-btn {
+  display: inline-block;
+  font-size: 1.3rem;
+  color: #65e2d9;
+  padding-bottom: .3rem;
+  border-bottom: 1px solid #65e2d9;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+#productive .productive__right .productive-btn span {
+  display: inline-block;
+  width: 1.5rem;
+  position: relative;
+  top: .3rem;
+}
+
+#productive .productive__right .productive-btn:hover {
+  margin-right: .5rem;
+  font-weight: bold;
+}
+
+#reviews {
+  background-color: #181f2a;
+  background-color: red;
+}
+
+*, *::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html, body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-size: 62.5%;
+  background-color: #202a3c;
+  color: white;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 125rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+/*# sourceMappingURL=main.css.map */

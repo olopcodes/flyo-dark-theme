@@ -1,0 +1,46 @@
+#productive {
+  background-color: red;
+}
+
+#productive .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  height: 40rem;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+#productive .productive__left {
+  height: 100%;
+  background-image: url(../images/illustration-stay-productive.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#productive .productive__right {
+  height: 100%;
+  background-color: grey;
+  padding: 3rem;
+}
+
+#productive .productive__right h2 {
+  font-size: 2.5rem;
+  margin: 3rem 0 1.5rem;
+}
+
+#productive .productive__right h2 span {
+  display: block;
+}
+
+#productive .productive__right p {
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+#productive .productive__right .productuve-btn {
+  display: inline-block;
+}
+/*# sourceMappingURL=productive.css.map */
