@@ -216,8 +216,100 @@
 }
 
 #reviews {
+  position: relative;
   background-color: #181f2a;
-  background-color: red;
+  padding: 5rem 0;
+  height: 60rem;
+}
+
+#reviews .quote-box {
+  width: 10rem;
+  position: relative;
+  z-index: 1;
+  top: 2rem;
+}
+
+#reviews .reviews__container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+#reviews .review {
+  background-color: #202a3c;
+  width: 30%;
+  padding: 2.5rem;
+  border-radius: 1rem;
+}
+
+#reviews .review__text {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+#reviews .author-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#reviews .author-box img {
+  width: 5rem;
+  border-radius: 50%;
+  margin-right: 1.5rem;
+}
+
+#reviews .author-text h5 {
+  font-size: 1.3rem;
+}
+
+#reviews .author-text p {
+  font-size: 1rem;
+}
+
+#reviews #access {
+  position: absolute;
+  bottom: 0;
+  background-color: #202a3c;
+  width: 60%;
+  left: 20%;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+#reviews #access h2 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+#reviews #access p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+#reviews #access form input {
+  padding: 1.2rem;
+  border: none;
+  border-radius: 2rem;
+  width: 55%;
+  margin-right: 2rem;
+}
+
+#reviews #access form button {
+  width: 30%;
+  padding: 1.2rem 1.5rem;
 }
 
 *, *::before,

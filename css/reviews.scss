@@ -1,5 +1,99 @@
 #reviews {
+    position: relative;
     background-color: $main-bg;
-    background-color: red;
+    padding: 5rem 0;
+    height: 60rem;
+    // background-color: red;
+
+    .quote-box {
+        width: 10rem;
+        position: relative;
+        z-index: 1;
+        top: 2rem;
+    }
+
+    .reviews__container {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+    }
+
+    .review {
+        background-color: $reviews-bg;
+        width: 30%;
+        padding: 2.5rem;
+        border-radius: 1rem;
+        // need styles for 1000 below
+        
+    }
+
+    .review__text {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .author-box {
+        display: flex;
+        align-items: center;
+    }
+
+    .author-box img {
+        width: 5rem;
+        border-radius: 50%;
+        margin-right: 1.5rem;
+    }
+
+    .author-text h5 {
+        font-size: 1.3rem;
+    }
+
+    .author-text p {
+        font-size: 1rem;
+    }
+
+    #access {
+        position: absolute;
+        bottom: 0;
+        background-color: $reviews-bg;;
+        width: 60%;
+        left: 20%;
+        text-align: center;
+        padding: 2rem;
+        border-radius: 1rem;
+        // need styles for 1000 below
+        
+
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+            }
+    
+         p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+    
+         form input {
+            padding: 1.2rem;
+            border: none;
+            border-radius: 2rem;
+            width: 55%;
+            margin-right: 2rem;
+        // need styles for 1000 below
+
+        }
+    
+         form button {
+            width: 30%;
+            padding: 1.2rem 1.5rem;
+        // need styles for 1000 below
+
+        }
+    }
+
+     
 
 }
