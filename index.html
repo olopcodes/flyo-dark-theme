@@ -11,7 +11,7 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 11px; text-align: center; padding: 1rem 0;}
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
@@ -203,11 +203,71 @@
       </aside>
     </section>
   </main>
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
+
+  <footer id="footer">
+    <div class="container">
+      <div class="footer__logo logo">
+        <img src="./images/logo.svg" alt="fylo logo">
+      </div>
+
+      <div class="footer__content">
+        <div class="footer__text">
+          <div class="footer__location">
+            <img src="/images/icon-location.svg" alt="">
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+            dolore magna aliqua
+          </p>
+        </div>
+
+        <div class="footer__contact">
+          <div>
+            <img class="footer__img footer__phone" src="/images/icon-phone.svg" alt="">
+            <p>
+              +1-543-123-4567
+            </p>
+          </div>
+          <div>
+            <img class="footer__img footer__email" src="/images/icon-email.svg" alt="">
+            <p>
+              example@fylo.com
+            </p>
+          </div>
+        </div>
+
+        <div class="footer__links">
+          <ul class="links-1">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+          <ul class="links-2">
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__social">
+          <a href="#">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+      </div>
+
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">olopcodes</a>.
+      </p>
+    </div>
   </footer>
 </body>
 </html>

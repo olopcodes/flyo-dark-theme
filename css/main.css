@@ -280,7 +280,7 @@
 
 #reviews #access {
   position: absolute;
-  bottom: 0;
+  bottom: -7rem;
   background-color: #202a3c;
   width: 60%;
   left: 20%;
@@ -310,6 +310,103 @@
 #reviews #access form button {
   width: 30%;
   padding: 1.2rem 1.5rem;
+}
+
+#footer {
+  background-color: #0b1523;
+  padding-top: 15rem;
+}
+
+#footer .footer__logo {
+  width: 12rem;
+  margin-bottom: 2rem;
+}
+
+#footer .footer__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+}
+
+#footer .footer__location {
+  width: 4rem;
+}
+
+#footer .footer__img {
+  width: 1.5rem;
+}
+
+#footer .footer__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 25%;
+}
+
+#footer .footer__text p {
+  margin-left: 1.5rem;
+  font-size: 1.2rem;
+}
+
+#footer .footer__contact div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#footer .footer__contact div:not(:nth-of-type(2)) {
+  margin-bottom: 2rem;
+}
+
+#footer .footer__contact div p {
+  font-size: 1.2rem;
+  margin-left: 1.5rem;
+}
+
+#footer .footer__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#footer .footer__links ul:not(:nth-of-type(2)) {
+  margin-right: 2rem;
+}
+
+#footer .footer__links li a {
+  color: white;
+  font-size: 1.2rem;
+}
+
+#footer .footer__links li a:hover {
+  color: #65e2d9;
+}
+
+#footer .footer__social a {
+  color: white;
+  font-size: 1.2rem;
+  padding: .7rem;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin: 0 1rem;
+}
+
+#footer .footer__social a:hover {
+  color: #65e2d9;
+  border: 1px solid #65e2d9;
 }
 
 *, *::before,
