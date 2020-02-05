@@ -14,6 +14,13 @@
         // background-position: center;
         // background-repeat: no-repeat;
         // background-size: cover;
+        @include media (800px){
+            width: 60%;
+        }
+
+        @include media (500px){
+            width: 80%;
+        }
         
     }
 
@@ -24,18 +31,27 @@
         // to place this box above curve
         position: relative;
         z-index: 2;
+        @include media (800px){
+            width: 55%;
+        }
     }
 
     .showcase__heading {
         font-size: 3.5rem;
         line-height: 1.5;
         margin-bottom: 2rem;
+        @include media (600px){
+           font-size: 2.5rem;
+        }
     }
 
     .showcase__info {
         font-size: 1.8rem;
         line-height: 1.3;
         margin-bottom: 3rem;
+        @include media (600px){
+            font-size: 1,3rem;
+         }
     }
 
     .showcase__curve-box {

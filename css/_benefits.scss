@@ -8,17 +8,28 @@
 
     .benefits__container {
         width: 50%;
-        
         // background-color: grey;
         margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
+
+        @include media (1000px) {
+            width: 70%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     }
 
     .benefits__box {
         text-align: center;
         padding: 2.5rem;
+        @include media (1000px) {
+            width: 60%;
+        }
     }
 
     .benefits__img {

@@ -7,14 +7,17 @@
         grid-template-columns: repeat(2, 1fr);
         height: 40rem;
         justify-self: center;
+
+        @include media (800px) {
+            height: auto;
+            display: flex;
+            flex-direction: column;
+
+        }
     }
 
-    .productive__left {
+    .productive__left img {
         height: 100%;
-        background-image: url(../images/illustration-stay-productive.png);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;   
     }
 
     .productive__right {
