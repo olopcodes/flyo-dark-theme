@@ -2,7 +2,12 @@
     padding-top: 2rem;
     position: relative;
     height: 95rem;
-    
+    @include media (1000px){
+        height: 80rem;
+    }
+    @include media (500px){
+        height: 60rem;
+    }
 
     .showcase__img-box {
         width: 40%;
@@ -34,6 +39,10 @@
         @include media (800px){
             width: 55%;
         }
+
+        @include media (800px){
+            width: 90%;
+        }
     }
 
     .showcase__heading {
@@ -58,11 +67,14 @@
         // to place below text box
         position: absolute;
         z-index: 1;
-        bottom: 0;
+        bottom: -1%;
         // better control of the image
-        height: 35%;
+        height: auto;
         width: 100%;
-
+        // background-image: url('../images/bg-curvy-desktop.svg');
+        // background-position: center;
+        // background-size: cover;
+        // background-repeat: no-repeat;
         // media < 1000px =max-width change img
         // media 1500px > 
         // height: 35%

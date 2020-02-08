@@ -1,6 +1,9 @@
 #benefits {
     background-color: $main-bg;
     
+    @include media (470px) {
+        padding: 5rem 0;
+    }
 
     // position: relative;
     // z-index: 1;
@@ -30,6 +33,11 @@
         @include media (1000px) {
             width: 60%;
         }
+
+        @include media (470px) {
+            width: 90%;
+        }
+        
     }
 
     .benefits__img {

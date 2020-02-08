@@ -15,11 +15,20 @@
 
     .nav__logo{
         width: 12rem;
+
+        @include media (500px) {
+            width: 10rem;
+        }
     }
 
     .nav__menu  {
+
         ul {
             display: flex;
+
+            @include media (500px) {
+                justify-content: space-evenly;
+            }
         }
         
         &-item {
@@ -31,18 +40,16 @@
             &:hover {
                 color: $cta-cyan;
             }
+
+            @include media (500px) {
+                font-size: 1.2rem;
+            }
         }
-    }
 
-    .nav__btn {
-        width: 4rem;
-        height: 4rem;
-        display: none;
-        i {
-            font-size: 2.5rem;
+        @include media (500px) {
+            width: 60%;
         }
+        
     }
-
-
 }
 

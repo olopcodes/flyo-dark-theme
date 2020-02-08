@@ -21,6 +21,13 @@
   background-image: linear-gradient(to left, #65e2d9, #339ecc);
 }
 
+@media screen and (max-width: 450px) {
+  .cta-btn {
+    padding: 1.2rem 5.5rem;
+    font-size: 1rem;
+  }
+}
+
 #nav {
   padding: 2rem 0;
   background-color: #202a3c;
@@ -47,10 +54,24 @@
   width: 12rem;
 }
 
+@media screen and (max-width: 500px) {
+  #nav .nav__logo {
+    width: 10rem;
+  }
+}
+
 #nav .nav__menu ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media screen and (max-width: 500px) {
+  #nav .nav__menu ul {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
 }
 
 #nav .nav__menu-item {
@@ -65,20 +86,34 @@
   color: #65e2d9;
 }
 
-#nav .nav__btn {
-  width: 4rem;
-  height: 4rem;
-  display: none;
+@media screen and (max-width: 500px) {
+  #nav .nav__menu-item {
+    font-size: 1.2rem;
+  }
 }
 
-#nav .nav__btn i {
-  font-size: 2.5rem;
+@media screen and (max-width: 500px) {
+  #nav .nav__menu {
+    width: 60%;
+  }
 }
 
 #showcase {
   padding-top: 2rem;
   position: relative;
   height: 95rem;
+}
+
+@media screen and (max-width: 1000px) {
+  #showcase {
+    height: 80rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #showcase {
+    height: 60rem;
+  }
 }
 
 #showcase .showcase__img-box {
@@ -113,6 +148,12 @@
   }
 }
 
+@media screen and (max-width: 800px) {
+  #showcase .showcase__text {
+    width: 90%;
+  }
+}
+
 #showcase .showcase__heading {
   font-size: 3.5rem;
   line-height: 1.5;
@@ -140,8 +181,8 @@
 #showcase .showcase__curve-box {
   position: absolute;
   z-index: 1;
-  bottom: 0;
-  height: 35%;
+  bottom: -1%;
+  height: auto;
   width: 100%;
 }
 
@@ -151,6 +192,12 @@
 
 #benefits {
   background-color: #181f2a;
+}
+
+@media screen and (max-width: 470px) {
+  #benefits {
+    padding: 5rem 0;
+  }
 }
 
 #benefits .benefits__container {
@@ -192,6 +239,12 @@
 @media screen and (max-width: 1000px) {
   #benefits .benefits__box {
     width: 60%;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  #benefits .benefits__box {
+    width: 90%;
   }
 }
 
@@ -293,6 +346,12 @@
   }
 }
 
+@media screen and (max-width: 500px) {
+  #reviews {
+    height: 115rem;
+  }
+}
+
 #reviews .container {
   position: relative;
 }
@@ -310,6 +369,13 @@
     left: 20%;
     top: 7%;
     width: 6rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #reviews .quote-box {
+    left: 5%;
+    top: 5%;
   }
 }
 
@@ -339,6 +405,12 @@
   }
 }
 
+@media screen and (max-width: 500px) {
+  #reviews .reviews__container {
+    height: 80rem;
+  }
+}
+
 #reviews .review {
   background-color: #202a3c;
   width: 30%;
@@ -349,6 +421,12 @@
 @media screen and (max-width: 1000px) {
   #reviews .review {
     width: 55%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #reviews .review {
+    width: 90%;
   }
 }
 
@@ -391,6 +469,13 @@
   border-radius: 1rem;
 }
 
+@media screen and (max-width: 1000px) {
+  #reviews #access {
+    width: 90%;
+    left: 5%;
+  }
+}
+
 #reviews #access h2 {
   font-size: 1.8rem;
   margin-bottom: 2rem;
@@ -427,6 +512,12 @@
   }
 }
 
+@media screen and (max-width: 500px) {
+  #reviews #access form input {
+    width: 90%;
+  }
+}
+
 #reviews #access form button {
   width: 30%;
   padding: 1.2rem 1.5rem;
@@ -436,6 +527,12 @@
   #reviews #access form button {
     margin: 0 auto;
     width: 55%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #reviews #access form button {
+    width: 90%;
   }
 }
 
@@ -499,6 +596,12 @@
 @media screen and (max-width: 800px) {
   #footer .footer__text {
     width: 40%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #footer .footer__text {
+    width: 100%;
   }
 }
 

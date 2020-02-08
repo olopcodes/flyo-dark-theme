@@ -17,4 +17,9 @@
                 $cta-cyan, $cta-blue);
     }
 
+    @include media (450px){
+        padding: 1.2rem 5.5rem;
+        font-size: 1rem;
+    }
+
 }

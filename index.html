@@ -23,13 +23,7 @@
         <img src="./images/logo.svg" alt="fylo logo">
       </div>
   
-      <div class="nav__menu-open nav__btn btn">
-        <i class="fas fa-bars"></i>
-      </div>
       <div class="nav__menu">
-        <div class="nav__menu-close nav__btn btn">
-          <i class="far fa-times-circle"></i>
-        </div>
         <ul>
           <li><a href="#" class="nav__menu-item">Features</a></li>
           <li><a href="#" class="nav__menu-item">Team</a></li>
@@ -58,9 +52,16 @@
           <a href="#" class="cta-btn btn">Get Started</a>
         </div>
 
+        <!-- responsive images -->
         <div class="showcase__curve-box">
+          <!-- width of the mobile is 375px -->
+          <!-- width of desktop is 1440px -->
           <!-- add curve with bg -->
-          <img class="showcase__curve-img" src="./images/bg-curvy-desktop.svg" alt="">
+          <!-- <img class="showcase__curve-img" src="./images/bg-curvy-desktop.svg" alt=""> -->
+          <picture>
+            <source srcset="/images/bg-curvy-mobile.svg" media="(max-width: 1000px)">
+            <img src="/images/bg-curvy-desktop.svg" alt="">
+          </picture>
         </div>
       </div>
     </header>

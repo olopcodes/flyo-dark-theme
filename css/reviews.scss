@@ -8,6 +8,10 @@
         height: 100rem;
     }
 
+    @include media (500px) {
+        height: 115rem;
+    }
+
     .container {
         position: relative;
     }
@@ -24,6 +28,11 @@
             top: 7%;
             width: 6rem;
          }
+
+         @include media (500px) {
+            left: 5%;
+            top: 5%;
+        }
     }
 
     .reviews__container {
@@ -40,6 +49,10 @@
             position: relative;
             top: 5rem;
          }
+
+         @include media (500px) {
+            height: 80rem;
+        }  
     }
 
     .review {
@@ -51,7 +64,9 @@
         @include media (1000px) {
             width: 55%;
          }
-        
+        @include media (500px) {
+            width: 90%;
+        }
     }
 
     .review__text {
@@ -88,6 +103,10 @@
         padding: 2rem;
         border-radius: 1rem;
         // need styles for 1000 below
+        @include media (1000px) {
+            width: 90%;
+            left: 5%;
+         }
         
 
         h2 {
@@ -119,6 +138,9 @@
                 margin: 0 auto 1.5rem;
             }
 
+            @include media (500px) {
+                width: 90%;
+            }
         }
     
          form button {
@@ -128,6 +150,10 @@
             @include media (1000px) {
                 margin: 0 auto;
                 width: 55%;
+            }
+
+            @include media (500px) {
+                width: 90%;
             }
         }
     }

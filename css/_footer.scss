@@ -36,6 +36,10 @@
         @include media (800px) {
             width: 40%;
         }
+
+        @include media (500px) {
+            width: 100%;
+        }
         
         p {
             margin-left: 1.5rem;
